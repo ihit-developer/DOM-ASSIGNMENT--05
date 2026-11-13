@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f0fa;
+  color: #302b45;
+  transition: 0.3s;
+}
+
+/* Header */
+header {
+  background: linear-gradient(120deg, #5141a5, #8065d8);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 13px;
+  color: #e8e3ff;
+}
+
+/* Main Container */
+.container {
+  max-width: 950px;
+  margin: 22px auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Task Cards */
+.task-card {
+  background: white;
+  padding: 18px;
+  border-radius: 11px;
+  border: 1px solid #e5e0f2;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.number {
+  display: inline-block;
+  background: #eeeaff;
+  color: #604bb5;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.task-card h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #443675;
+}
+
+.description {
+  font-size: 13px;
+  color: #777386;
+  margin-bottom: 14px;
+}
+
+/* Buttons */
+button {
+  background: #6651bd;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #49369c;
+  transform: translateY(-2px);
+}
+
+/* Task 2 */
+#para {
+  background: #f2efff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Task 4 */
+input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #d8d1ed;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #6651bd;
+}
+
+#output {
+  margin-top: 10px;
+  color: #604bb5;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 18px;
+}
+
+/* Task 5 */
+#mouse {
+  background: #eeeaff;
+  border: 2px dashed #a99bdc;
+  border-radius: 8px;
+  padding: 25px 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#status {
+  font-size: 14px;
+  color: #5141a5;
+}
+
+/* Footer */
+footer {
+  background: #302653;
+  color: white;
+  text-align: center;
+  padding: 17px;
+}
+
+footer h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+footer p {
+  color: #d0c9e8;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 23px;
+  }
+
+  .task-card {
+    padding: 16px;
+  }
+}
